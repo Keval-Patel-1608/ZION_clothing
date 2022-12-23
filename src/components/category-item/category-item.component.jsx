@@ -4,7 +4,7 @@ import React from 'react';
 const CategoryItem = ({ category }) => {
     const{ imageUrl, title} = category;
     return (
-    <div className="category-container">
+    <div className="category-container">            
         <div 
             className="background-image" 
             style={{
