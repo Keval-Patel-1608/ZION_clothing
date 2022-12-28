@@ -6,6 +6,8 @@
     padding: 15px 0;
     font-size: 20px;
     align-items: center;
+    font-weight: bold;
+    font-size: 20px;
   
     .image-container {
       width: 23%;
@@ -19,10 +21,11 @@
     .name,
     .quantity,
     .price {
-      width: 23%;
+      width: 23.5%;
     }
   
     .quantity {
+      padding-left: 1%;
       display: flex;
   
       .arrow {
@@ -35,7 +38,7 @@
     }
   
     .remove-button {
-      padding-left: 12px;
+      padding-left: 17px;
       cursor: pointer;
     }
   }

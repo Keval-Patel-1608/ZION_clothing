@@ -3,6 +3,8 @@ import { CartContext } from '../../contexts/cart.context';
 import CheckoutItem from '../../components/checkout-item/checkout-item.component';
 import './checkout.styles.scss'
 
+import { ReactComponent as EmptyCartIcon} from '../../assets/trolley.svg';
+
 const Checkout = () => {
     const { cartItems, cartTotal } = useContext(CartContext);
 
@@ -25,9 +27,19 @@ const Checkout = () => {
                 <span>Remove</span>
             </div>
             </div>
-            {cartItems.map((cartItem) => (
-                <CheckoutItem key={cartItem.id} cartItem={cartItem} />
-            ))}
+
+            {cartItems.length ? (      
+                cartItems.map((cartItem) => (
+                    <CheckoutItem key={cartItem.id} cartItem={cartItem} /> 
+                 ))
+            ) : (
+                <div className='empty-message'>
+                    <span>Your cart is empty</span>
+                    <EmptyCartIcon className='empty-cart'></EmptyCartIcon>
+                    <hr className='hr-width'/>
+                </div>
+                )
+            }            
             <div className='total'>TOTAL: ${cartTotal}</div>
         </div>
     )
