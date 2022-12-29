@@ -7,8 +7,10 @@
     padding: 20px;
     border: 1px solid black;
     background-color: white;
-    top: 90px;
-    right: 40px;
+    top: 70px;
+    // 
+    right: 27px;
+    // 
     z-index: 5;
   
     .empty-message {
@@ -24,7 +26,6 @@
       }
     }
     
-
     .cart-items {
       height: 280px;
       display: flex;
@@ -34,15 +35,17 @@
     }
   
     ::-webkit-scrollbar {
-      width: 8px;
+      // width: 8px;
+      width: 26px;  
     }
       
     ::-webkit-scrollbar-thumb {
-      border-radius: 4px;
-      box-shadow: inset 0 0 30px rgba(45, 42, 42, 0.815);
+      // border-radius: 4px;
+      // box-shadow: inset 0 0 30px rgba(45, 42, 42, 0.815);
+      border: 8px solid #ffffff ;
+      background-clip: padding-box;
+      border-radius: 9999px;
+      background-color: rgba(45, 42, 42, 0.815);
     } 
-
-    button {
-      // margin-top: auto;
-    }
+    
   }
