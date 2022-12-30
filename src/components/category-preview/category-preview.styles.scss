@@ -14,5 +14,35 @@
       grid-template-columns: repeat(4, 1fr);
       column-gap: 20px;
     }
+  
+    .title-container {
+      height: 82px;
+      display: flex;
+      justify-content: space-between;
+
+      .title-link-container {
+        margin-top: 32px ;
+        align-items: center;
+
+        .show-more {
+          padding-right: 22px;
+          color: rgba(0, 0, 0, 0.719);
+
+          &:hover {
+            color: rgb(0, 0, 0);
+          }
+        }
+
+        .down-logo {
+          padding-left: 10px;   
+          .down-arrow {
+            position: absolute;
+            width: 24px;
+            padding-left: 0px;
+          }
+        }
+
+      }
+    }
   }
   
