@@ -63,6 +63,27 @@ export const getCategoriesAndDocuments = async () => {
   return categoryMap;
 }
 
+export const homepageCategory = async () => {
+  
+  const docRef = doc(db, "categories", "sneakers");
+  const q = query(docRef);
+  const docSnap = await getDoc(q);
+  
+  return docSnap.data();
+  
+  // try {
+    //   const docSnap = await getDoc(docRef);
+    //   if(docSnap.exists()) {
+      //       console.log(docSnap.data());
+      //   } else {
+        //       console.log("Document does not exist")
+  //   }
+
+  // } catch(error) {
+  //     console.log(error)
+  // }
+}
+
 export const createUserDocumentFromAuth = async (userAuth, additionalInformation = {}  ) => {
   if(!userAuth) return;
   
