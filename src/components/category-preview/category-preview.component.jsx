@@ -3,8 +3,10 @@ import ProductCard from '../product-card/product-card.component';
 import './category-preview.styles.scss';
 import DownArrow from '../../assets/down.svg';
 
-const CategoryPreview = ({title, products }) => {
+const CategoryPreview = ({title, products }) => {    
+
     return (
+
         <div className='category-preview-container'>
             <div className='title-container'>
                 <h2>
@@ -18,8 +20,8 @@ const CategoryPreview = ({title, products }) => {
                     </Link>
                 </div>
             </div>
-            <div className='preview'>
-                {
+            <div className='preview'>                
+                {                 
                     products
                         .filter((_, idx) => idx < 4)
                         .map((product) => 
@@ -30,4 +32,4 @@ const CategoryPreview = ({title, products }) => {
     )
 }
 
-export default CategoryPreview;
+export default CategoryPreview; 

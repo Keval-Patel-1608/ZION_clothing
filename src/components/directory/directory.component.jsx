@@ -1,20 +1,20 @@
-import DirectoryItem from "../directory-item/directory-item.component";
+import '../directory-item/directory-item.styles.scss';
 import './directory.styles.scss';
 import React from "react";
 import Button from "../button/button.component";
 import { Link } from "react-router-dom";
-// import { Video } from "react-router-dom";
 import backgroundVideo from "../../assets/sneakers-video.mp4";
 
-const Directory = ({categories}) => { 
+const Directory = ({categories, product }) => { 
     
     return (
 
     <div className="container">
-        <div class="row">
-            <div class="row">
-                <div class="column one">
-                    <div class="title-name">
+        <div className="row">
+            <div className="row">
+
+                <div className="column one">
+                    <div className="title-name">
                         Introducing Your New Streetwear Wardrobe
                     </div>        
                     <Link className="shop-button" to="/shop">
@@ -24,7 +24,7 @@ const Directory = ({categories}) => {
                     </Link>
                 </div>
                 
-                <div class="column two">
+                <div className="column two">
                     <Link to="/shop/sneakers">
                         <div className="directory-item-container">                    
                             {/* <div 
@@ -45,10 +45,12 @@ const Directory = ({categories}) => {
                         </div>
                     </Link>
                 </div>
+                
             </div>
                 
-            <div class="row">
-                <div class="column three">
+            <div className="row">
+
+                <div className="column three">
                     <Link to="/shop/hats">
                         <div className="directory-item-container">                    
                             <div 
@@ -59,13 +61,12 @@ const Directory = ({categories}) => {
                             />
                             <div className="body">
                                 <h2>Hats</h2>
-                                {/* <p>Shop Now</p> */}
                             </div>
                         </div>
                     </Link>
                 </div>
                 
-                <div class="column four">
+                <div className="column four">
                     <Link to="/shop/jackets">                   
                         <div className="directory-item-container"> 
                             <div 
@@ -76,13 +77,12 @@ const Directory = ({categories}) => {
                                 />
                             <div className="body">
                                 <h2>Jackets</h2>
-                                {/* <p>Shop Now</p> */}
                             </div>
                         </div>
                     </Link>
                 </div>
                 
-                <div class="column five">
+                <div className="column five">
                     <Link to="/shop/womens">                                   
                         <div className="directory-item-container">                    
                             <div 
@@ -93,13 +93,12 @@ const Directory = ({categories}) => {
                                 />
                             <div className="body">
                                 <h2>Womens</h2>
-                                {/* <p>Shop Now</p> */}
                             </div>
                         </div>
                     </Link>
                 </div>
                 
-                <div class="column six">
+                <div className="column six">
                     <Link to="/shop/mens">                                                       
                         <div className="directory-item-container">                    
                             <div 
@@ -110,39 +109,76 @@ const Directory = ({categories}) => {
                             />
                             <div className="body">
                                 <h2>Mens</h2>
-                                {/* <p>Shop Now</p> */}
                             </div>
                         </div>
                     </Link>
                 </div>
+
             </div>                        
+            
+            <div className="row heading-name">
+                <span>LATEST ARRIVALS</span>
+            </div>
+
+            <div className='category-preview-container'>
+                <div className='preview'>
+                    <div className='product-card-container container-align'>
+                        <img src="https://i.ibb.co/bLB646Z/red-beanie.png" alt="Red Beanie" />
+                        <div className='footer'>
+                            <span className='name'>Red Beanie</span>
+                            <span className='price'>$ 18</span>
+                        </div>
+                        <Link className="redirect-button" to="/shop/hats">
+                            <Button buttonType='inverted'>
+                                More Like This
+                            </Button>
+                        </Link>
+                    </div>
+                    <div className='product-card-container'>
+                        <img src="https://i.ibb.co/N3BN1bh/red-polka-dot-dress.png" alt="Red Dot Dress" />
+                        <div className='footer'>
+                            <span className='name'>Red Dot Dress</span>
+                            <span className='price'>$ 80</span>
+                        </div>
+                        <Link className="redirect-button" to="/shop/womens">
+                            <Button buttonType='inverted'>
+                                More Like This
+                            </Button>
+                        </Link>
+                    </div>
+                    <div className='product-card-container'>
+                        <img src="https://i.ibb.co/RvwnBL8/pink-shirt.png" alt="Men Pink T-shirt" />
+                        <div className='footer'>
+                            <span className='name'>Pink T-shirt</span>
+                            <span className='price'>$ 25</span>
+                        </div>
+                        <Link className="redirect-button" to="/shop/mens">
+                            <Button buttonType='inverted'>
+                                More Like This
+                            </Button>
+                        </Link>
+                    </div>
+                    <div className='product-card-container'>
+                        <img src="https://i.ibb.co/QcvzydB/nikes-red.png" alt="Nike Red shoes" />
+                        <div className='footer'>
+                            <span className='name'>Nike Red High Tops</span>
+                            <span className='price'>$ 160</span>
+                        </div>
+                        <Link className="redirect-button" to="/shop/sneakers">
+                            <Button buttonType='inverted'>
+                                    More Like This
+                            </Button>
+                        </Link>
+                    </div>
+                </div>
+            </div>
 
             <div className="row homepage-footer">
                 © 2023. &nbsp; All rights reserved
             </div>
         </div>
     </div>
-
-
-        // <div className="directory-container">
-        //     {/* <div className="directory-banner" > */}
-        //         <span className="banner-component">
-        //             <div className="title-name">
-        //                 Introducing Your New Streetwear Wardrobe                    
-        //             </div>
-        //             <Button buttonType='inverted' onClick={() => this.nextPath('/shop')}>Start Shopping</Button>
-        //         </span>
-        //         <span className="category-1">
-        //             hello !
-        //         </span>
-        //     {/* </div> */}
-        //     <div className="directory-components">
-        //         {/* {categories.map(( category ) => (
-        //             <DirectoryItem key={category.id} category={category} />
-        //         ))} */}
-        //     </div>
-        // </div> 
-    );
+    );    
 };
 
 export default Directory;
