@@ -1,6 +1,5 @@
 .navigation {
     height: 80px;
-    // width: 97%;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -8,15 +7,23 @@
     position: fixed;
     top: 0;
     margin-left: -40px;
-    // margin-right: 40px;
     background-color: rgba(255, 255, 255, 0.868);
     z-index: 1;
   
     .logo-container {
       height: 100%;
-      width: 95px;
+      // width: 95px;
+      width: 250px;
       padding-top: 13px;
       margin-left: 25px;
+    }
+
+    .logo-name {
+      font-family: 'Playfair Display', serif;
+      margin-left: 8px;
+      font-size: 40px;
+      color: #454444;
+      // color: #626767;
     }
   
     .nav-links-container {
