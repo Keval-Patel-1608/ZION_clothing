@@ -24,7 +24,7 @@ const Navigation = () => {
   return (
       <Fragment>
         <div className='navigation'>
-            <Link className='logo-container' title='ZiON Clothing' to='/'>
+            <Link className='logo-container' to='/'>
                 {/* <CrwnLogo className='logo' /> */}
                 <ZionLogo title='ZION Clothing' />
             </Link>
