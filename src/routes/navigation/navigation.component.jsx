@@ -26,7 +26,7 @@ const Navigation = () => {
         <div className='navigation'>
             <Link className='logo-container' to='/'>
                 {/* <CrwnLogo className='logo' /> */}
-                <ZionLogo title='ZION Clothing' />
+                <ZionLogo className='logo' title='ZION Clothing' />
             </Link>
             <div className='nav-links-container'>
                 <Link className='nav-link' to='/shop'>

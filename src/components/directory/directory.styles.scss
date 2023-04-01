@@ -1,99 +1,12 @@
-// .directory-container {
-//     background-color: gray;
-//     margin-right: -40px;
-//     // height: 800px;
-//     margin-top: 1.5%;
-//     width: device-width;
-//     margin-left: -40px;
-//     display: flex;
-    // flex-wrap: wrap;
-    // justify-content: space-between;
-
-  // .directory-banner {
-  //   display: block;
-  //   background-color: grey;
-  //   width: 100%;              
-  // }
-
-// }
-
-// .banner-component {
-//   width: 35%;
-//   height: 450px;
-//   background-color: #f5f5f5;  
-//   display: inline;
-
-//   .title-name {
-//     text-align: center;
-//     width: 60%;
-//     color: #4A4A4A;
-//     margin: 95px 0px 0px 115px;
-//     font-size: 42px;
-//     font-family:sans-serif ;
-//     line-height: 54px;
-//   }
-  
-  // button {
-  //   font-family: Gill Sans MT;
-  //   padding: 0px 15px 0px 15px; 
-  //   opacity: 0.65;
-  //   // position: relative;
-  //   top: 35px;
-  //   margin: 30px 0px 0px 228px;
-  // }
-
-  // &:hover {  
-
-  //   button {
-  //     opacity: 0.85;
-  //     display: flex;
-  //   }
-  // }
-// }
-
-  // .category-1 {
-  //   display: inline;
-  //   width: 65%;
-  //   height: 450px;
-  //   background-color: rgb(230, 172, 172);
-  //   margin-left: 10px;
-  // }
-
-  // .directory-components {
-  //   position: relative;
-  //   display: block;
-  //   top: 50%;
-  //   width: 100%;
-  //   height: 450px;
-  //   background-color: aqua;
-
-  //   .category-2 {
-  //     position: absolute;
-  //     width: 24%;
-  //     height: 450px;
-  //     background-color: aquamarine;
-    
-  //   }
-  // }
-
-
-// /////////////////////////////////////////////////////////////
-// /////////////////////////////////////////////////////////////
-// /////////////////////////////////////////////////////////////
 .container {
-  // background-color: red;
   margin-top: 20px;
+  padding: 0px;
   margin-left: -45px;
-  margin-right: 0px;
   width: 100.2%;
   position: absolute;
-  padding-right: -40px;
 } 
 
 .row {
-  // width: 101%;
-    // margin-right: -20px;
-  
   .column {
     float: left;
     width: 30%;
@@ -104,7 +17,7 @@
   
   .title-name {
     text-align: center;
-    width: 22vw;
+    width: 24vw;
     color: #4A4A4A;
     margin-top: -80px;
     font-size: 42px;
@@ -177,8 +90,12 @@
     content: "";
     display: table;
     clear: both;
+  }  
+
+  .name , .price {
+    font-size: 20px;
   }
-  
+
   .homepage-footer {
     background-color: #626767;
     margin: 80px 0px -40px 0px;
@@ -195,9 +112,295 @@
     padding-left: 5px;
   }
 
-  @media screen and (max-width:600px) {
-    .column {
-      width: 100%;
+  .preview {
+    margin-right: 0px;
+  }
+
+
+
+
+  @media (max-width: 1330px) {     
+    .two {
+      margin-top:20px;
+      width: 63%;
+    }
+    .directory-item-container {
+      margin-right: -25px;
+      height: 484px!important;
+    }
+    .five {
+      width: 23.5%;
+    }
+    .heading-name {
+      margin-top: 200px;
+    }
+    .preview{
+      column-gap: 44px;
+      margin-right: -6px;
+    } 
+    .homepage-footer{
+      margin-right: -6px;
+      padding-bottom: 17px;
+    }   
+  }
+
+  @media (max-width: 1100px) and (min-width: 997px) {
+    .title-name {
+      width: 30vw;
+      font-size: 38px;
+    }
+    .tshirt {
+      height: 94%;
     }
   }
+  
+  @media (max-width: 997px) {   
+    .title-name {
+      width: 55%; 
+      font-size: 48px; 
+      }   
+    .one {
+      width: 107%!important;
+    }
+    .spacing {
+      height: 973px;
+    }
+    .two .directory-item-container {
+      height: 450px;  
+      width: 175%!important;  
+    }
+    .directory-item-container {
+      height: 400px;
+    }
+    .row {
+      margin-right: 0px;
+    }    
+    .row .column {
+      padding-right: 0px;
+      padding-top: 0px;
+    }
+    .category-row {
+      margin-left: 10px;
+      margin-right: -65px;
+      margin-top: 33px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 10px;
+      row-gap: 5px;
+    }  
+    .six .directory-item-container {
+      margin-right: 0px;
+    }      
+    .three, .four , .five , .six {
+      padding: 0px;
+      width: 100%; 
+      height: 100%;
+    }
+    .heading-name {
+      margin-top: 7%; 
+    }
+    .container-align {
+      padding-left: 0px;
+    } 
+    .category-preview-container {
+      margin-left: 12px;
+      margin-right: -8px;
+      .preview {
+        margin-right: -60px;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 10px;
+        row-gap: 45px;
+      }
+    }
+    .redirect-button {
+      margin-right: 80%;
+    }
+    .button-container {
+      // height: 30px;
+      margin-top: 30%;
+      border-radius: 5px;
+      font-size: 20px;
+      // padding-top: 8px;
+    }
+    .product-card-container {
+      height: 500px;
+    }
+    .name {
+      font-size: 20px;
+      overflow: hidden ;
+      padding-bottom: 30px;
+    }
+    .price {
+      font-size: 20px;
+    }
+    .homepage-footer {
+      margin-top: 10%;
+      margin-right: -78px;
+      padding-left: 5px;
+    }
+  }
+
+  @media (max-width: 769px) {
+    .row .one {
+      width: 112% !important;  
+    }
+    .title-name {
+      width: 60%;
+      line-height: 130%;
+      font-size: 55px;
+    }
+    .row .two .directory-item-container {
+      width: 183.5% !important;
+    }
+    .category-row {
+      margin-right: -81px;
+    }
+    .category-preview-container .preview {
+      margin-right: -81px;
+    }
+    .homepage-footer {
+      margin-right: -97.5px;
+    }
+  }
+
+  @media (max-width: 700px) {
+    .row .one {
+      width: 110% !important;  
+    }
+    .title-name {
+      width: 65%;
+      font-size: 48px;
+    }
+    .row .two .directory-item-container {
+      width: 182% !important;
+    }
+  }
+
+  @media (max-width: 547px) {
+    .row .one {
+      width: 113% !important;  
+    }
+    .row .two .directory-item-container {
+      width: 188%!important;
+    }
+    .title-name {
+      width: 80%;
+    }
+  }
+
+
+  @media (max-width: 447px) {
+    .row .one {
+      width: 121.5% !important;  
+    }
+    .row .two .directory-item-container {
+      width: 204.5% !important;
+    }
+    .button-container {
+      border-radius: 5px;
+      font-size: 14px;
+    }
+    .title-name {
+      width: 90%;
+    }
+  }
+
+  @media (max-width: 376px) {    
+    .container {
+      width: 100%;
+    }  
+    .title-name {
+      width: 80%; 
+      font-size: 38px; 
+      }   
+    .row .one {
+      height: 450px;
+      width: 125%!important;
+    }
+    .row .two .directory-item-container {
+      height: 350px;   
+      width: 212%!important;  
+    }    
+    .container-align {
+      padding-left: 0px;
+    }    
+    .category-row {
+      margin-left: -2px;
+      margin-right: -95px;
+      margin-top: -18px;
+      display:block ;
+    }
+    .heading-name {
+      padding: 40px;
+      font-size: 28px;
+      margin: 0px 0px 0px 40px;
+      width: 100%;
+    }
+    .category-preview-container {
+      margin-right: -11px;
+      .preview {
+        row-gap: 20px;
+      }
+    }
+    .redirect-button {
+      margin-right: 165px;
+    }
+    .name {
+      font-size: 16px;
+      overflow: hidden ;
+      padding-bottom: 25px;
+    }
+    .price {
+      font-size: 16px;
+    }
+    .homepage-footer {
+      margin-top: 0%;
+      margin-right: -26.5%;
+      padding-left: 5px;
+    }
+  }
+
+  
+  @media (max-width: 321px) {     
+    .category-row {
+      margin-left: -2px;
+      margin-right: -56px;
+      margin-top: -300px;
+      display:block ;
+    } 
+    .row .shop-button {
+      margin-top: 71px;
+    }   
+    .row .directory-item-container {
+      height: 364px!important;
+      margin-right: -24px;
+    }
+    .title-name {
+      width: 90%; 
+      font-size: 35px; 
+    }  
+    .row .two .directory-item-container { 
+      width: 214.5%!important;  
+    }
+    .category-preview-container {
+      margin-right: 2px;
+      .preview {
+        row-gap: 20px;
+      }
+    }
+    .heading-name {
+      text-align: center;
+      margin: 20px 0px 20px 35px;
+      font-size: 22px;
+    }
+    .homepage-footer {
+      margin-right: -85px;
+      padding-top: 25px;
+    }
+
+  }
+
+
 }
+
+

@@ -11,7 +11,7 @@ const Directory = ({categories, product }) => {
 
     <div className="container">
         <div className="row">
-            <div className="row">
+            <div className="row spacing">
 
                 <div className="column one">
                     <div className="title-name">
@@ -48,7 +48,7 @@ const Directory = ({categories, product }) => {
                 
             </div>
                 
-            <div className="row">
+            <div className="row category-row">
 
                 <div className="column three">
                     <Link to="/shop/hats">
@@ -126,35 +126,35 @@ const Directory = ({categories, product }) => {
                         <img src="https://i.ibb.co/bLB646Z/red-beanie.png" alt="Red Beanie" />
                         <div className='footer'>
                             <span className='name'>Red Beanie</span>
-                            <span className='price'>$ 18</span>
+                            <span className='price'>$18</span>
                         </div>
                         <Link className="redirect-button" to="/shop/hats">
                             <Button buttonType='inverted'>
-                                More Like This
+                                Check Out
                             </Button>
                         </Link>
                     </div>
                     <div className='product-card-container'>
-                        <img src="https://i.ibb.co/N3BN1bh/red-polka-dot-dress.png" alt="Red Dot Dress" />
+                        <img src="https://i.ibb.co/N3BN1bh/red-polka-dot-dress.png" alt="Red Dot Dress" className="tshirt" />
                         <div className='footer'>
                             <span className='name'>Red Dot Dress</span>
-                            <span className='price'>$ 80</span>
+                            <span className='price'>$80</span>
                         </div>
                         <Link className="redirect-button" to="/shop/womens">
                             <Button buttonType='inverted'>
-                                More Like This
+                                Check Out
                             </Button>
                         </Link>
                     </div>
                     <div className='product-card-container'>
-                        <img src="https://i.ibb.co/RvwnBL8/pink-shirt.png" alt="Men Pink T-shirt" />
+                        <img src="https://i.ibb.co/RvwnBL8/pink-shirt.png" alt="Men Pink T-shirt" className="tshirt" />
                         <div className='footer'>
                             <span className='name'>Pink T-shirt</span>
-                            <span className='price'>$ 25</span>
+                            <span className='price'>$25</span>
                         </div>
                         <Link className="redirect-button" to="/shop/mens">
                             <Button buttonType='inverted'>
-                                More Like This
+                                Check Out
                             </Button>
                         </Link>
                     </div>
@@ -162,11 +162,11 @@ const Directory = ({categories, product }) => {
                         <img src="https://i.ibb.co/QcvzydB/nikes-red.png" alt="Nike Red shoes" />
                         <div className='footer'>
                             <span className='name'>Nike Red High Tops</span>
-                            <span className='price'>$ 160</span>
+                            <span className='price'>$160</span>
                         </div>
                         <Link className="redirect-button" to="/shop/sneakers">
                             <Button buttonType='inverted'>
-                                    More Like This
+                                    Check Out
                             </Button>
                         </Link>
                     </div>
