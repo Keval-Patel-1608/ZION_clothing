@@ -16,15 +16,17 @@ const Category = () => {
 
     return (
         <Fragment>
-            <Link to='../'>
-                <img className='back-button' src={BackButton} alt='back-button' />                
-            </Link>
-            <h2 className='category-title'>{category.toUpperCase()}</h2>
-            <div className='category-container'>
-                {products &&
-                    products.map((product) => (
-                        <ProductCard key={product.id} product={product}/>
-                    ))}
+            <div className='spacing'>
+                <Link to='../'>
+                    <img className='back-button' src={BackButton} alt='back-button' />                
+                </Link>
+                <h2 className='category-title'>{category.toUpperCase()}</h2>
+                <div className='category-container'>
+                    {products &&
+                        products.map((product) => (
+                            <ProductCard key={product.id} product={product}/>
+                        ))}
+                </div>
             </div>
         </Fragment>
     )

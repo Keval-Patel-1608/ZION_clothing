@@ -17,3 +17,31 @@
     width: 30px;
     display: inline;
 }
+
+@media (max-width: 769px) {
+    .spacing {
+        margin: 40px -36px 30px -36px;
+    }
+    .back-button {
+        width: 18px;
+    }
+    .name {
+        padding-bottom: 25px;
+    }
+    .category-title {
+        font-size: 23px;
+        margin-left: 5px;
+    }
+    .category-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 3px;
+        row-gap: 45px;
+    }
+}
+
+@media (max-width: 427px) {
+    .category-container {
+        row-gap: 20px;
+    }
+}
